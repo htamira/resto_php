@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../dsn_repas/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../dsn_repas/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../dsn_repas/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../dsn_repas/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../dsn_repas/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../dsn_repas/css/util.css">
+  <link rel="stylesheet" type="text/css" href="../dsn_repas/css/main.css">
+  
+  </head>
+  <body><center>
+    <form action="../controller/modify_repas.php"  method="POST"  class="contact1-form validate-form">
+   <fieldset>
+        <legend><h1>Modify REPAS</h1></legend>
+        <div class="contact1">
+          <div class="container-contact1">
+            <div class="contact1-pic js-tilt" data-tilt>
+              <img src="../img/ajoutplat.png" alt="IMG">
+            </div>
+      
+            <div class="wrap-input1 validate-input" data-validate = " entre le Nom du plat ">
+              <input class="input1" type="text" name="id" placeholder="id du plat " min="3">
+              <span class="shadow-input1"></span>
+            </div>
+       
+      
+              <div class="wrap-input1 validate-input" data-validate = " entre le Nom du plat ">
+                <input class="input1" type="text" name="nom" placeholder="Nom du plat " min="3">
+                <span class="shadow-input1"></span>
+              </div>
+      
+              <div class="wrap-input1 validate-input"
+               data-validate = "Entrer un entier positif ">
+                <input class="input1" type="number" 
+                name="prix" id="prix" placeholder="Prix"
+                min="0"
+                max="100">
+                <span class="shadow-input1"></span>
+              </div>
+      
+              <div class="wrap-input1 validate-input" data-validate = "catergorie est obligatoire">
+                
+                          <select class="input1" name="categorie">
+                              <option value="1"> entree </option>
+                              <option value="2">plat principale</option>
+                               <option value="3">dessert</option>
+                            </select>
+                           <span class="shadow-input1"></span>
+               </div>
+          
+            <input class="btn btn-primary" type="submit" value="modify" />
+            <input class="btn btn-primary" type="reset" value="Reset" />
+          </fieldset>
+    </form>
+    
+<!--===============================================================================================-->
+	<script src="../dsn_repas/vendor/jquery/jquery-3.2.1.min.js"></script>
+  <!--===============================================================================================-->
+    <script src="../dsn_repas/vendor/bootstrap/js/popper.js"></script>
+    <script src="../dsn_repas/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!--===============================================================================================-->
+    <script src="../dsn_repas/vendor/select2/select2.min.js"></script>
+  <!--===============================================================================================-->
+    <script src="../dsn_repas/vendor/tilt/tilt.jquery.min.js"></script>
+    <script >
+      $('.js-tilt').tilt({
+        scale: 1.1
+      })
+    </script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-23581568-13');
+  </script>
+  
+  <!--===============================================================================================-->
+    <script src="../dsn_repas/js/main.js"></script>
+  
+  </center>
+  </body>
+</html>
